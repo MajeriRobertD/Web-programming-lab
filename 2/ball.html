@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<style>
+  body{
+    background-image: url("imagine.jpg");
+  }
+#ball{
+  
+  position: relative;
+  margin: 50px auto;
+  margin-left: 50vw;
+  animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+#ball:hover{
+  animation-name: bounce;
+}
+
+@keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 500px;
+      
+      transform: scale(1.2, 0.8);
+      
+    }
+    
+    55%{
+      top:500px;
+      transform: scale(1.1, 0.9);
+
+    }
+
+    65% {
+    transform: translateY(50px) scale(.9,1.1);
+    
+
+    }
+    100% {
+      top: 0px;
+    }
+}
+
+.floor {
+  position: absolute;
+  top:  75%;
+  z-index: -1;
+  width: 1900px;
+  height: 230px;
+  background: black;
+  background-image: repeating-linear-gradient(45deg, rgb(64, 187, 218) 15px, black 30px);
+}
+
+
+  
+</style>
+
+</head>
+
+<body>
+  <div class="floor"></div>
+
+<svg id="ball" width="210px" height="200px">
+  <circle cx="100" cy="100" r="100" fill="yellow" />
+</svg>
+
+
+</body>
+</html>
