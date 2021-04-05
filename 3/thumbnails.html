@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thumbnails</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <fieldset class="content">
+    <legend> <h3>Hover these thumbnails</h3></legend>
+    <a
+      href="#"
+      onMouseOver="Enlarge('Style',1, 'rilke.jpg')"
+      onMouseOut="Enlarge('Style',0)"
+    >
+      <img src="rilke.jpg" alt="Rilke" style="width: 150px"
+    /></a>
+
+    <a
+      href="#"
+      onMouseOver="Enlarge('Style',1, 'mitzu2.jpg')"
+      onMouseOut="Enlarge('Style',0)"
+    >
+      <img src="mitzu2.jpg" alt="Mitzu" style="width: 150px; height: 143px"
+    /></a>
+    <a
+      href="#"
+      onMouseOver="Enlarge('Style',1, 'sofocle.jpg')"
+      onMouseOut="Enlarge('Style',0)"
+    >
+      <img src="sofocle.jpg" alt="Sofocle" style="width: 150px; height: 143px"
+    /></a>
+
+    <figure class="enlargeimg" id="Style">
+      <img id="largerimage" src="" />
+      <figcaption> </figcaption>
+    </figure>
+  </fieldset>
+  </body>
+
+</html>
