@@ -13,3 +13,6 @@ Write a JavaScript which displays several thumbnail images (reduced images). Whe
 <br>
 Homework 4: <br>
 Write a web page which contains some text. When the user selects a word from the web page (by double clicking it), all the occurrences of this word should be highlighted with a different background.
+<br>
+Homework 5: <br>
+Write a web application for managing a personal collection of URLs (web links). Together with the URL, a description/comment and a category must be added to the database. The user can add, remove and modify URLs and the associated descriptions. Also the user can browse using AJAX the list of URLs grouped by their categories. Prior to using the application, a user must log in with a username and password which are stored in the database). URL browsing should be paged - URLs are displayed on pages with maximum 4 URLs on a page (you should be able to go to the previous and the next page)
